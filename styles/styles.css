@@ -13,13 +13,13 @@
  :root {
   /* colors */
   --color-yellow: #ffea00;
-  --link-color: black;
-  --link-hover-color: black;
-  --background-color: #fff;
+  --link-color: #ffda7d;
+  --link-hover-color: #ffda7d;
+  --background-color: #261000;
   --overlay-background-color: #eee;
   --highlight-background-color: #ffc719;
-  --text-color: #202020;
-  --text-color-light: #ebebeb;
+  --text-color: #ffda7d;
+  --text-color-light: #ffda7d;
   --heading-highlight-color: #ffea00;
   --overlay-text-color: var(--text-color);
   --highlight-text-color: var(--text-color);

@@ -1,6 +1,6 @@
 /* stylelint-disable */
 :root {
-  --header-background: linear-gradient(to right, rgba(4, 25, 45, 0.95), rgba(4, 25, 45, 0.85));
+  --header-background: #261000;
   --header-height: 80px;
   --header-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   --dropdown-background: rgba(255, 255, 255, 0.98);
@@ -43,7 +43,7 @@ header nav {
 
 .header.block {
   background: var(--header-background);
-  color: white;
+  color: #ffda7d;
   position: fixed;
   width: 100%;
   top: 0;

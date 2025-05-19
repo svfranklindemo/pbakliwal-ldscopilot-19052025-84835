@@ -142,6 +142,18 @@
     ]
   },
   {
+    "id": "carousel",
+    "fields": [
+      {
+        "component": "text",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "slide",
     "fields": [
       {
@@ -156,6 +168,13 @@
         "name": "text",
         "value": "",
         "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "tag",
+        "value": "",
+        "label": "Tag",
         "valueType": "string"
       }
     ]
