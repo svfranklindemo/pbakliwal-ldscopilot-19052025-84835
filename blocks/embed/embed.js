@@ -55,6 +55,18 @@ const loadScript = (url, callback, type) => {
     return embedHTML;
   };
   
+  // Add Scene7 embed
+  const embedScene7 = (url) => {
+    const poster = "https://s7ap1.scene7.com/is/image/itcportalprod/Fantasy-of-Every-Heart-Thumbnail?fmt=webp-alpha";
+    return `<div style="width:100%;height:auto;position:relative;">
+      <video controls disablepictureinpicture controlslist="nodownload noremoteplayback noplaybackrate"
+        poster="${poster}"
+        class="cmp-video__player"
+        src="${url.href}">
+      </video>
+    </div>`;
+  };
+  
   const loadEmbed = (block, link, autoplay) => {
     if (block.classList.contains('embed-is-loaded')) {
       return;
@@ -72,6 +84,10 @@ const loadScript = (url, callback, type) => {
       {
         match: ['twitter'],
         embed: embedTwitter,
+      },
+      {
+        match: ['scene7.com'],
+        embed: embedScene7,
       },
     ];
   
