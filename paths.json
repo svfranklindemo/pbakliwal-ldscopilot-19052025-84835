@@ -1,7 +1,19 @@
 {
-  "mappings": [
-    "/content/pbakliwal/eds-crosswalk-source/:/",
-    "/content/pbakliwal/eds-crosswalk-source/metadata.json:/metadata.json",
-    "/content/pbakliwal/eds-crosswalk-source/redirects.json:/redirects.json"
-  ]
+    "mappings": [
+      "/content/pbakliwal/-darkfantasycreations/:/",
+      "/content/pbakliwal/-darkfantasycreations/configuration:/.helix/config.json",
+      "/content/pbakliwal/-darkfantasycreations/metadata:/metadata.json",
+      "/content/pbakliwal/-darkfantasycreations/configs:/configs.json",
+      "/content/pbakliwal/-darkfantasycreations/configs-stage:/configs-stage.json",
+      "/content/pbakliwal/-darkfantasycreations/configs-dev:/configs-dev.json",
+      "/content/pbakliwal/-darkfantasycreations/redirects:/redirects.json",
+      "/content/pbakliwal/-darkfantasycreations/placeholders:/placeholders.json",
+      "/content/pbakliwal/-darkfantasycreations/products/recommended-products:/products/recommended-products.json",
+      "/content/pbakliwal/-darkfantasycreations/enrichment/enrichment:/enrichment/enrichment.json",
+      "/content/pbakliwal/-darkfantasycreations/images/products/:/images/products/"
+    ],
+    "includes": [
+      "/content/pbakliwal/-darkfantasycreations",
+      "/content/dam/citisignal/images/products/"
+    ]
 }
