@@ -10,8 +10,6 @@ export function updateButtons(activeSlide) {
 
 export default function decorate(block) {
   const buttons = document.createElement('div');
-  const isTypeA = block.closest('.carousel-type-a');
-  const slides = [...block.children];
   [...block.children].forEach((row, i) => {
     const classes = ['image', 'text', 'tag'];
     classes.forEach((e, j) => {
@@ -41,31 +39,4 @@ export default function decorate(block) {
     updateButtons(slide);
   }, { passive: true });
 
-  if (isTypeA) {
-    // Add prev/next buttons if not already present
-    const wrapper = block.closest('.carousel-wrapper');
-    // Ensure buttons are only added once
-    if (!isTypeA.querySelector('.carousel-nav-btn.prev')) {
-      const prevBtn = document.createElement('button');
-      prevBtn.className = 'carousel-nav-btn prev';
-      prevBtn.setAttribute('aria-label', 'Previous');
-      prevBtn.innerHTML = '&#x2039;'; // ‹
-      isTypeA.insertBefore(prevBtn, wrapper);
-      prevBtn.addEventListener('click', () => {
-        const slideWidth = slides[0].clientWidth;
-        block.scrollBy({ left: -3 * slideWidth, behavior: 'smooth' });
-      });
-    }
-    if (!isTypeA.querySelector('.carousel-nav-btn.next')) {
-      const nextBtn = document.createElement('button');
-      nextBtn.className = 'carousel-nav-btn next';
-      nextBtn.setAttribute('aria-label', 'Next');
-      nextBtn.innerHTML = '&#x203A;'; // ›
-      isTypeA.appendChild(nextBtn);
-      nextBtn.addEventListener('click', () => {
-        const slideWidth = slides[0].clientWidth;
-        block.scrollBy({ left: 3 * slideWidth, behavior: 'smooth' });
-      });
-    }
-  }
 }
