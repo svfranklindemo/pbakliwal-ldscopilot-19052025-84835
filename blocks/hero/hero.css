@@ -9,7 +9,8 @@ main .hero-container {
   
 main .hero {
     position: relative;
-    min-height: 600px;
+    min-height: 60vh;
+  max-height:600px;
     padding: 0;    
     color: var(--background-color);
     overflow: hidden;
