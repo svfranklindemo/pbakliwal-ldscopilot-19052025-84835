@@ -9,7 +9,7 @@ main .hero-container {
   
 main .hero {
     position: relative;
-    min-height: 60vh;
+    height: 60vh;
   max-height:600px;
     padding: 0;    
     color: var(--background-color);
